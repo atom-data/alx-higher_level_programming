@@ -15,6 +15,7 @@ class Square:
         size (int): The length of a side of a square
         """
         self.size = size
+
     def area(self):
         """Compute the area of a square
 
