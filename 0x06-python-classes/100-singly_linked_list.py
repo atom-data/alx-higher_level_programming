@@ -6,8 +6,8 @@ class Node:
     """Representation of a node of a singly linked list
 
     Attributes:
-    data (int): value of entry in the node
-    next_node (Node): The next instance of Node or None
+    __data (int): value of entry in the node
+    __next_node (Node): The next instance of Node or None
     """
     def __init__(self, data, next_node=None):
         """Initialize a new instance of a node
@@ -60,8 +60,11 @@ class Node:
 
 
 class SinglyLinkedList:
-    """Representation of a singly linked list"""
+    """Representation of a singly linked list
 
+    Attributes:
+    __head (Node): head of the linked list
+    """
     def __init__(self):
         """Initialize an instance of SinglyLinkedList"""
         self.__head = None
