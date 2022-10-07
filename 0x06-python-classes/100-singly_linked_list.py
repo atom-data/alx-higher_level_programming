@@ -21,22 +21,39 @@ class Node:
 
     @property
     def data(self):
-        """Get/set data attribute of Node"""
+        """Get data attribute of Node
+
+        Returns:
+            The value of data of the node
+        """
         return self.__data
 
     @data.setter
     def data(self, value):
+        """Assign value to data attribute
+
+        Args:
+        value (int): The value of data or raise error
+        """
         if type(value) is not int:
             raise TypeError('data must be an integer')
         self.__data = value
 
     @property
     def next_node(self):
-        """Get/set next_node attribute of node"""
+        """Get next_node attribute of node
+
+        Returns:
+        The value of the next node attribute
+        """
         return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
+        """Set value to next_node attribute
+        Args:
+        value (Node): The next node or raise an error
+        """
         if value is not None and type(value) is not Node:
             raise TypeError('next_node must be a node object')
         self.__next_node = value
@@ -44,6 +61,7 @@ class Node:
 
 class SinglyLinkedList:
     """Representation of a singly linked list"""
+
     def __init__(self):
         """Initialize an instance of SinglyLinkedList"""
         self.__head = None
