@@ -1,4 +1,4 @@
 -- List all records of the table, second_table
-SELECT score, COUNT(score) As number FROM second_table AS C
-GROUP score
-ORDER BY score DESC
+SELECT score, name FROM second_table
+WHERE name is NOT NULL
+ORDER BY score DESC;
