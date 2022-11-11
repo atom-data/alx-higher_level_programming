@@ -13,6 +13,7 @@ class Square(Rectangle):
         size (int): length of side of a square
         """
         super().__init__(size, size)
+        self.__size = size
 
         def area(self):
             """Compute area of a square"""
